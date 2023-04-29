@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+  <!--Defino la codificación de la página web-->
+
+    <meta charset="UTF-8">
+
+  <!--Se activa compatibilidad y comportamiento responsivo-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Menú principal</title>
+
+<!--Importo componentes Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+<!--Aquí uno la hoja de estilo CSS externa al documento HTML-->
+
+<link rel="stylesheet" href="../CSS/estilos.css"/>
+
+<!--Aquí pongo un icono a la pestaña del navegador -->
+    <link rel="icon" href="../IMAGENES/vaca.ico"/>
+
+
+<!--Aquí enlazo un sitio de recursos de ICONOS con el documento HTML -->
+
+    <script src="https://kit.fontawesome.com/1101bbc0a2.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body id="cuerpo">
+
+
+<!-- Aquí se utiliza el componente Bootstrap navbar que se posiciona en la zona superior de la página web-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
+        <div id="divi1" class="container-fluid">
+        <a id="enlaceLogo" class="navbar-brand" href="index.html">
+
+          <!--Aquí se coloca la imagen del logo de la empresa en la barra de navegación -->
+            <img src="../IMAGENES/vaca.png" alt="logo empresa" width="90px">
+            </a>
+          
+
+          <!--Aquí se inicia un formulario con entrada de texto de tipo busqueda y un botón asociado para enviar la solicitud-->  
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="¿Buscas algo?" aria-label="Search">
+                <button id="botonB" class="btn btn-outline-success" type="submit" >Buscar</button>
+              </form>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item lileft">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+
+
+                 <!--Aquí se utiliza la clase dropdown para hacer un boton que despliege opciones-->                  
+                  <li class="nav-item dropdown lileft">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Leches</a></li>
+                      <li><a class="dropdown-item" href="#">Quesos</a></li>
+                      <li><a class="dropdown-item" href="#">Mantequillas</a></li>
+                      <li><a class="dropdown-item" href="#">Yogures</a></li>
+                      <li><a class="dropdown-item" href="#">Otros</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item lileft">
+                    <a class="nav-link" href="#empresa">Empresa</a>
+
+                  </li>
+                  <li class="nav-item lileft">
+                    <a class="nav-link" href="#contactos">Contactos</a>
+                  </li>
+                  
+                </ul>
+              </div> 
+             
+               
+        </div>
+      </nav>
+    <br>
+ 
+
+     <!--Aquí se inicia el script del componente carrusel de Bootstrap, se incluyen los marcadores de tarjetas asociados a un valor de indice-->
+            
+      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        </div>
+        <!--Aquí se define el tiempo que va a durar cada tarjeta o diapositiva y se importan las imágenes correspondientes dandoles una pequeña descripción-->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../IMAGENES/leche.png" class="d-block w-100" alt="..." width="700px" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>mmm... rico</h5>
+              <p>Prueba nuestra variedad de leche 100% natural</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMAGENES/quesos.png" class="d-block w-100" alt="..." width="700px" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Aprovecha</h5>
+              <p>Tenemos una gran variedad de quesos frescos</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMAGENES/mantequilla.png" class="d-block w-100" alt="..." width="700px" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hecha un vistazo</h5>
+              <p>Prueba el delicioso sabor de nuestra mantequilla.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMAGENES/yogures.png" class="d-block w-100" alt="..." width="700px" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tenemos yogures</h5>
+              <p>Disfruta de unos deliciosos yogures cremosos y frescos</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="../IMAGENES/postres.png" class="d-block w-100" alt="..." width="700px" height="600px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hay más...</h5>
+              <p>Pruba nuestra variedad de postres de leche para acompañar tus comidas diarias</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Aquí se definen los botones de navegación hacia adelante y atrás del carrusel-->
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+      <hr>
+
+
+      <!--Aquí se inserta una tarjeta que pertenece a la clase card-group, se le importa una imagen y se le da una descripción-->
+
+      <div class="card-group">
+        <div class="card">
+          <img src="../IMAGENES/final (3).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto Natural</h5>
+            <p class="card-text">Nuestros productos son hechos con leche de vaca sacados directamentes de nuestros criaderos </p>
+           
+           
+           <!-- Aquí se crea un botón que ejecuta un componente Modal de Bootstrap-->
+           
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" > &gt Ver más 
+  <span class="visually-hidden">Loading...</span>
+            </button>
+
+            
+<!-- Script que crea el componente Modal asociada al botón-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Producto Natural</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Aquí debe haber más información al respecto
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+
+  <!--Aquí se inserta una tarjeta que pertenece a la clase card-footer, se le importa una imagen y se le da una descripción-->
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../IMAGENES/final (4).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nuestro Criadero</h5>
+            <p class="card-text">Cuidamos que las condiciones de nuestros animales sean optimas en nuestras instalaciones, garantizamos su correcto cuidado.</p>
+           
+   <!-- Aquí se crea un botón que ejecuta un componente Modal de Bootstrap-->
+
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModa2"> &gt Ver más</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuestro Criadero</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Aquí deberia haber más informacion sobre este tema
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+
+ <!--Aquí se inserta una tarjeta que pertenece a la clase card-footer, se le importa una imagen y se le da una descripción-->
+         
+        <div class="card-footer">
+            <small class="text-muted">Foto de uno de los criaderos de la empresa DOCEEIC</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../IMAGENES/final (6).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tenemos maquinaria</h5>
+            <p class="card-text">Contamos con tecnología de punta para que el proceso de elaboración de nuestros productos sean ideales, a un menosr costo y además que sea cuidadoso con la salud de nuestros animales.</p>
+           
+           <!-- Aquí se crea un botón que ejecuta un componente Modal de Bootstrap-->
+
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModa3"> &gt Ver más</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tenemos Maquinaria</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Aquí debe ir más información
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Aplicaciones de filtración de membrana de micro, ultra, nano y ósmosis.</small>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+      <hr>
+       <!--Aquí inicia el script del componente acordión de Bootstrap-->
+
+      <div class="accordion" id="accordionExample" >
+        <div class="accordion-item" >
+          <h2 class="accordion-header" id="headingOne" >
+        
+        <!--Le creo un estilo en línea para poner un fondo negro y letra blanca en las cabeceras del acordión-->    
+            <button  style="background-color: black; color:aliceblue" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Comentarios de alguno de nuestros clientes:
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong> Sofia Urrutia Saavedra - Región de la Araucanía</strong> "Estoy encantada con la variedad de productos lácteos de DOCEEIC-CJMT. Siempre puedo encontrar lo que necesito, desde leche fresca hasta yogures deliciosos. Además, su atención al cliente es excepcional, siempre están dispuestos a ayudarme con cualquier pregunta que tenga." 
+              <br><br><strong> Julio Riquelme Opazo - Región Metropolitana</strong> "DOCEEIC-CJMT es mi marca favorita de productos lácteos. Su queso es simplemente delicioso y siempre compro su leche orgánica, que tiene un sabor y una calidad excepcionales. Además, me gusta que se preocupen por el medio ambiente y trabajen con productores locales."
+              <br><br><strong> Nadia Herrera Sepulveda - Región de los lagos</strong> "La calidad de los productos de DOCEEIC-CJMT es impresionante. Me encanta que utilicen ingredientes naturales y no agreguen conservantes. Su yogur griego es mi favorito, con una textura cremosa y un sabor auténtico. Definitivamente recomiendo sus productos a cualquier amante de los lácteos."
+            
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button   style="background-color: black; color:aliceblue" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             Que dicen los profecionales... 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>DOCEEIC-CJMT</strong> es una empresa de productos lácteos que destaca por la calidad de sus productos y su compromiso con la sostenibilidad. Sus productos son elaborados con ingredientes naturales y cuidadosamente seleccionados, lo que les confiere un sabor auténtico y una textura excepcional. Además, la empresa se preocupa por trabajar con productores locales y reducir su impacto ambiental a través de prácticas sostenibles.
+
+              Entre sus productos más destacados se encuentran sus diferentes variedades de leche, yogures y quesos, cada uno con un sabor único y delicioso. Sus productos orgánicos y libres de conservantes también son una excelente opción para aquellos consumidores que buscan una alternativa más saludable y sostenible.
+              
+              En resumen, los productos de DOCEEIC-CJMT son una excelente opción para aquellos consumidores que buscan calidad, sabor auténtico y un compromiso con la sostenibilidad. La empresa ha logrado destacar en el mercado de productos lácteos gracias a su filosofía y a la calidad de sus productos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button  style="background-color: black; color:aliceblue" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Nuestros Logros:
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              DOCEEIC-CJMT ha reducido significativamente su huella de carbono al implementar prácticas sostenibles en su cadena de suministro y producción. La empresa ha logrado reducir sus emisiones de CO2 en un 50% en los últimos cinco años, a través de la utilización de fuentes de energía renovable y la optimización de su logística.
+
+La empresa ha establecido una alianza con productores locales para promover la economía circular y reducir la cantidad de residuos generados en la producción de sus productos. DOCEEIC-CJMT ha implementado programas de recolección y reciclaje de envases, logrando que el 90% de sus envases sean reutilizados o reciclados.
+
+DOCEEIC-CJMT ha llevado a cabo iniciativas sociales en las comunidades donde opera. La empresa ha establecido un programa de becas para estudiantes locales y ha apoyado proyectos de desarrollo en la región, enfocados en la educación y el bienestar de la comunidad. Además, la empresa ha donado productos lácteos a organizaciones benéficas y a bancos de alimentos, para ayudar a combatir la inseguridad alimentaria.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+<!--Aquí inicio el footer de la página web-->
+
+
+      <footer>
+<!--Crep bloques de division para acomodar los componentes del footer-->
+      <div class="pie">
+
+        <div class="g1">
+
+          <div class="caja">
+
+<!--Importo la imagen del logo de la empresa-->
+
+            <figure>
+              <a href="#">
+                  <img src="../IMAGENES/vaca.png" alt="logo" width="180px" />
+              </a>
+            </figure>
+          </div>
+
+
+ <!--Se agrega información al footer-->         
+          <div class="caja">
+
+
+              <h2 id="empresa">SOBRE NOSOTROS</h2>
+              <p>Aquí hay texto muy importante sobre la empresa</p>
+
+
+  <!--Aquí creo un botón para desplegar un componente Offcanvas en el lado izquierdo de la pantalla -->              
+              
+          <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver más información</button>
+   
+   
+  <!--Inicia el script para componente Offcanvas de Bootstrap, le cambio el color de fondo con un estilo en línea-->
+
+              <div style="background-color: rgb(255, 218, 148);" class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sobre DOCEEIC-CJMT:</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+
+   <!--Dentro del componente Offcanvas importo una imagen del jefe de la empresa con más información-->
+
+                  <figure id="jefe">
+                  <img src="../IMAGENES/jefe.jpg" alt="..." width="200px"/>
+                  <hr>
+                  <p style="display:block">Aqui hay información sobre el fundador de la empresa y más...</p>
+                </figure>
+                
+                </div>
+                <hr>
+              </div>
+
+          </div>
+
+<!--Aquí pongo informacióm de contactos-->
+
+              <div class="caja">
+            
+                <h2 id="contactos"> CONTACTOS</h2>
+                 <div class="redes">
+                  <small><i>Llamenos a los números: +569354676**, +569725536**</i></small>
+                 </div>
+               </div>    
+
+
+<!--Aquí importo iconos de redes socialesmen el apartado "Siguenos" del footer-->
+
+          <div class="caja">
+            
+           <h2> SIGUENOS</h2>
+            <div class="redes">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+          </div>
+
+        
+
+          </div>
+
+         <div class="g2">
+
+         <small>&copy; 2023 <b>DOCEEIC-CJMT</b>- Todos los Derechos Reservados </small>
+
+
+
+         </div> 
+      </div>
+      </footer>
+      
+  </body>     
+</html>
